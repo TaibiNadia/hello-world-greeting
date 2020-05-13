@@ -1,7 +1,8 @@
 pipeline {
   
-  agent agent_java
-  
+  agent {
+    label 'agent_java' 
+  }
     stages {
   
         stage('Test') {
